@@ -1,10 +1,10 @@
 @import url('https://fonts.googleapis.com/css?family=Muli&display=swap');
 
-*{
+* {
     box-sizing: border-box;
  }
 body {
-    font-family: sans-serif;
+    font-family: 'Muli', sans-serif;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -30,7 +30,7 @@ body {
     flex: 0.5;
     margin: 10px;
     position: relative;
-    -webkit-transition: all700ms ease-in;
+    -webkit-transition: all 700ms ease-in;
 }
 
 .panel h3 {
@@ -39,7 +39,7 @@ body {
     bottom: 20px;
     left: 20px;
     margin: 0;
-    opacity: 0;flex: 5;
+    opacity: 0;
     
 }
 .panel.active {
@@ -48,20 +48,20 @@ body {
 }
 
 
-.panel.active {
+.panel.active h3 {
     opacity: 1;    
-    transition: opacity 0,3s ease0,4s;
+    transition: opacity 0.3s ease-in 0.4s;
 
 }
 
-@media (max-width: 480px)
+@media (max-width: 480px) {   
        .container {
         width: 100vw;
     }
 
-    .panel:nth-last-of-type(4)
-    .panel:nth-of-type(5)
-    
+    .panel:nth-of-type(4),
+    .panel:nth-of-type(5) {
+        display: none;
 }
 }
 
